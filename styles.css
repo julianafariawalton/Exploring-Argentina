@@ -19,7 +19,7 @@ h1, h2, h3 {
 }
 
 nav {
-    background-color: #eaf5fa;
+    background-color: white;
     padding: 1rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -37,6 +37,8 @@ nav a {
 
 main {
     padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -56,4 +58,22 @@ footer {
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
+}
+
+.destinations {
+    display: flex;
+    gap: 1rem;
+}
+
+.destinations div {
+    flex: 1;
+    padding: 1rem;
+    background-color: #eaf5fa;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .destinations {
+        flex-direction: column;
+    }
 }
