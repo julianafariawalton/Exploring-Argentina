@@ -18,6 +18,14 @@ h1, h2, h3 {
     font-family: "Playfair Display", serif;
 }
 
+h1,h2 {
+    color: #245b75;
+}
+
+h3 {
+    color: #333333;
+}
+
 nav {
     background-color: white;
     padding: 1rem;
@@ -30,15 +38,33 @@ nav li {
     margin-right: 2rem;
 }
 
-nav a {
+nav a:link {
     color: #245b75;
     text-decoration: none;
+}
+
+nav a:visited {
+    color: #245b75;
+}
+
+nav a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+
+nav a:focus-visible {
+    outline: 2px solid #245b75;
+    outline-offset: 4px;
 }
 
 main {
     padding: 1rem;
     max-width: 900px;
     margin: 0 auto;
+}
+
+main > p {
+    max-width: 750px;
 }
 
 h2 {
@@ -67,8 +93,16 @@ footer {
 
 .destinations div {
     flex: 1;
+    min-width: 0;
     padding: 1rem;
     background-color: #eaf5fa;
+    border-radius: 8px;
+}
+
+.destinations img {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 8px;
 }
 
