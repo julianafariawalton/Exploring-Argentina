@@ -169,3 +169,19 @@ button {
 button:hover {
     background-color: #333333;
 }
+
+select, textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #245b75;
+    border-radius: 4px;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}

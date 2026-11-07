@@ -76,6 +76,18 @@
             <label for="email">Email Address:</label> 
             <input type="email" id="email" name="email" required> 
             
+            <label for="topic">What is your question about?</label>
+            <select id="topic" name="topic">
+                <option value="destinations">Destinations</option>
+                <option value="food">Food & Culture</option>
+                <option value="tips">Travel Tips</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5"
+            placeholder="Write your question here..."></textarea>
+            
             <button type="submit">Submit</button>
         
         </form>
