@@ -110,6 +110,28 @@ footer {
     .destinations {
         flex-direction: column;
     }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 0.75rem 0;
+    }
+
+    body {
+        width: 95%;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        overflow-wrap: anywhere;
+    }
 }
 
 table {
