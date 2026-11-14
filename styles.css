@@ -33,9 +33,13 @@ nav {
     text-align: center;
 }
 
+nav ul {
+    padding: 0;
+}
+
 nav li {
-    display: inline;
-    margin-right: 2rem;
+    display: inline-block;
+    margin: 0.5rem 0.75rem;
 }
 
 nav a:link {
@@ -106,6 +110,20 @@ footer {
     border-radius: 8px;
 }
 
+.destinations a {
+    display: inline-block;
+    background-color: #245b75;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.destinations a:hover {
+    background-color: #333333;
+}
+
 @media (max-width: 600px) {
     .destinations {
         flex-direction: column;
@@ -131,6 +149,28 @@ footer {
     th, td {
         padding: 0.5rem;
         overflow-wrap: anywhere;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        width: 90%;
+    }
+
+    .destinations {
+        flex-wrap: wrap;
+    }
+
+    .destinations div {
+        flex: 1 1 40%;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0.5rem;
     }
 }
 
@@ -206,4 +246,47 @@ select, textarea {
 
 textarea {
     resize: vertical;
+}
+
+.travel-checklist {
+    background-color: #eaf5fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.travel-checklist label {
+    display: block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.travel-checklist input {
+    display: inline;
+    width: auto;
+    margin: 0 0.5rem 0 0;
+    padding: 0;
+}
+
+.faq {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.faq details {
+    background-color: #eaf5fa;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.faq summary {
+    color: #245b75;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq details p {
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
